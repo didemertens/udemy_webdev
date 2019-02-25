@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Test</title>
+</head>
+<body>
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+
+  <form action="form_test_thanks.html" method="get">
+    <label for="firstname">First Name:</label>
+    <input id="firstname" type="text" name="" placeholder="First Name" required>
+
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" type="text" name="" placeholder="Last Name" required>
+
+    <p></p>
+
+    <label for="useremail">Email:</label>
+    <input id="useremail" type="text" name="" placeholder="name@email.com" required>
+
+    <label for="password">Password:</label>
+    <input id="password" type="password" name="" placeholder="" required>
+
+    <p>Are you over the age of 18?</p>
+    <label for="over18">Yes:</label>
+    <input id="over18" type="radio" name="over" value="yes">
+    <label for="under18">No:</label>
+    <input id="under18" type="radio" name="over" value="no">
+
+    <p>Do you have a Credit Card or PayPal?</p>
+    <select name="payment">
+      <option value="cc">Credit Card</option>
+      <option value="pp">PayPal</option>
+    </select>
+
+    <p></p>
+
+    <input type="submit" name="" value="Sign Up">
+  </form>
+
+</body>
+</html>
