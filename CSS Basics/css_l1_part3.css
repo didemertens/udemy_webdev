@@ -25,3 +25,17 @@ li a[href="https://www.npr.org"]{
   color: red;
   border: 5px solid orange;
 }
+
+/*Specificity, overriding other effects:*/
+
+li{
+  color: red;
+}
+
+.topitems{
+  color: blue;
+}
+
+#two{
+  border: 3px solid black;
+}
