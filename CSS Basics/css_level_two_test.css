@@ -1,0 +1,34 @@
+h1{
+  font-family: 'Chonburi', cursive;
+  text-align: center;
+}
+
+table{
+  margin: auto;
+}
+
+td{
+  width: 150px;
+  height: 250px;
+  border: 6px solid white;
+}
+
+#td1{
+  background-color: #FFCDB2;
+}
+
+#td2{
+  background-color: #FFB4A2;
+}
+
+#td3{
+  background-color: #E5989B;
+}
+
+#td4{
+  background-color: #B5838D;
+}
+
+#td5{
+  background-color: #6D6875;
+}
