@@ -1,0 +1,37 @@
+h1, h2{
+color:red;
+text-align: center;
+}
+
+p {
+font-size: 12px;
+text-indent: 1.5em;
+}
+
+#divone {
+font-size: 12px;
+border: 2px solid black;
+padding: 25px;
+width: 250px;
+margin: auto
+}
+
+#divtwo {
+font-size: 12px;
+border: 2px solid black;
+padding: 25px;
+margin: 5px;
+}
+
+/*Can use pseude tags such as*/
+
+a:hover {
+background-color:yellow;
+}
+
+p:first-letter{
+font-size: 20px;
+}
+p:first-line{
+background-color: yellow;
+}
