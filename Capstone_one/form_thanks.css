@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #061738;
+  color: white;
+  border: 50px solid #347c0d;
+  padding: 25px;
+  border-top: none;
+}

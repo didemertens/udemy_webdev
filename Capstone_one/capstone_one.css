@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #011627;
+  color: #FDFFFC;
+  border: 60px solid #2EC486;
+  border-top: none;
+  margin: 0px;
+  padding: 10px;
+}
+
+#pone{
+  margin: 150px 300px 50px;
+}
+
+#ptwo{
+  margin: 20px 300px 20px;
+}
+
+#signup{
+  margin: 20px 300px 50px;
+}
+
+form{
+  font-size: 1.5em;
+}
+
+#firstname{
+  padding: 10px;
+  width: 200px;
+}
+
+#lastname{
+  padding: 10px;
+  width: 200px;
+}
+
+#email{
+  padding: 10px;
+  width: 200px;
+}
+
+#button{
+  background-color: #FF9F1C;
+  border-radius: 25px;
+  padding: 25px;
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+}
