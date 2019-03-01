@@ -1,0 +1,39 @@
+/* This is a comment */
+
+/*h1{
+  color: blue;
+}
+
+li{
+  color: rgb(255, 128, 128);
+}
+
+p{
+  color: #42f45c;
+}
+
+h4{
+  color: rgba(255, 128, 128, 0.3);
+}
+*/
+
+body{
+  background: url(https://www.sciencemag.org/sites/default/files/styles/inline__450w__no_aspect/public/cc_NationalGeographic_1929635_16x9.jpg?itok=lYqLO5T6);
+  background-repeat: repeat;
+}
+
+div{
+  background-color: #d6f441;
+  border-color: #42f45c;
+  border-width: 5px;
+  border-style: dotted;
+}
+
+p{
+  color: blue;
+}
+
+span{
+  background-color: red;
+  color: black;
+}

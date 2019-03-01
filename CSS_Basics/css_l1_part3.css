@@ -1,0 +1,41 @@
+/*Use a period for classes
+Use a hashtag for ids*/
+
+.firstDiv{
+  color: red;
+}
+
+#singledout{
+  color: blue;
+  text-decoration: underline;
+}
+
+
+h3 + ul{
+  border: 4px dotted purple;
+}
+
+/*select all ul items immediately after h3*/
+
+li a{
+  color: purple;
+}
+
+li a[href="https://www.npr.org"]{
+  color: red;
+  border: 5px solid orange;
+}
+
+/*Specificity, overriding other effects:*/
+
+li{
+  color: red;
+}
+
+.topitems{
+  color: blue;
+}
+
+#two{
+  border: 3px solid black;
+}
