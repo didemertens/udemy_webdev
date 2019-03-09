@@ -1,17 +1,19 @@
-function addStudent(name,array){
-  array.push(name)
+function addStudent(){
+  var name = prompt("Enter the name you want to add:")
+  students.push(name)
 }
 
-function delStudent(name, array){
-  for (var i = 0; i < array.length; i++) {
-  if (array[i] === delName){
-    array.splice(i, 1)
+function delStudent(){
+  var delName = prompt("Enter the name you want to delete:")
+  for (var i = 0; i < students.length; i++) {
+  if (students[i] === delName){
+    students.splice(i, 1)
     }
   }
 }
 
-function displayRoster(array){
-  console.log(array)
+function displayRoster(){
+  console.log(students)
 }
 
 students = []
@@ -20,29 +22,23 @@ var start = prompt("Would you like to start the roster web app? y/n")
 
 if (start === "y"){
   app = true
-  }else if (start === "n"){
-    alert("See you later!")
-  }
+  while (app == true){
+    var userInput = prompt("Please select an action: add, remove, display, or quit.")
 
-while (app == true){
-  var userInput = prompt("Please select an action: add, remove, display, or quit.")
-
-  if (userInput === "add"){
-    var name = prompt("Enter the name you want to add:")
-    addStudent(name,students)
+    if (userInput === "add"){
+      addStudent()
+    }else if (userInput === "remove"){
+      delStudent()
+    }else if (userInput === "display"){
+      displayRoster()
+    }else if (userInput === 'quit'){
+      break
+    }else{
+      alert("Sorry, we didn't get that. Please try again.")
+      app = true
+    }
   }
-
-  if (userInput === "remove"){
-    var delName = prompt("Enter the name you want to delete:")
-    delStudent(delName, students)
-  }
-
-  if (userInput === "display"){
-    displayRoster(students)
-  }
-
-  if (userInput === 'quit'){
-    alert("See you later!")
-    break
-  }
+}else {
+  app = false
 }
+alert("See you later!")
