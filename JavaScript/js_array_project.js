@@ -1,3 +1,18 @@
+function addStudent(name,array){
+  array.push(name)
+}
+
+function delStudent(name, array){
+  for (var i = 0; i < array.length; i++) {
+  if (array[i] === delName){
+    array.splice(i, 1)
+    }
+  }
+}
+
+function displayRoster(array){
+  console.log(array)
+}
 
 students = []
 
@@ -14,20 +29,16 @@ while (app == true){
 
   if (userInput === "add"){
     var name = prompt("Enter the name you want to add:")
-    students.push(name)
+    addStudent(name,students)
   }
 
   if (userInput === "remove"){
     var delName = prompt("Enter the name you want to delete:")
-    for (var i = 0; i < students.length; i++) {
-      if (students[i] === delName){
-        students.splice(i, 1)
-      }
-    }
+    delStudent(delName, students)
   }
 
   if (userInput === "display"){
-    console.log(students)
+    displayRoster(students)
   }
 
   if (userInput === 'quit'){
@@ -35,4 +46,3 @@ while (app == true){
     break
   }
 }
-
