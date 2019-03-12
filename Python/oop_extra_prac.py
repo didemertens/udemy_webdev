@@ -7,6 +7,7 @@ class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+        self.is_hungry = True
 
     # Instance method
     def description(self):
@@ -32,15 +33,15 @@ class Bulldog(Dog):
     def run(self, speed):
         return "%s runs %s" % (self.name, speed)
 
-sam = Dog("Sam",9)
-bobby = Dog("Bobby",2)
-# nora = Dog("Nora",4)
+# sam = Dog("Sam",9)
+# bobby = Dog("Bobby",2)
+# # nora = Dog("Nora",4)
 
-def get_biggest_number(*args):
-  return max(args)
+# def get_biggest_number(*args):
+#   return max(args)
 
-oldest = get_biggest_number(sam.age,bobby.age,nora.age)
-print(f"The oldest dog is {oldest} years old.")
+# oldest = get_biggest_number(sam.age,bobby.age,nora.age)
+# print(f"The oldest dog is {oldest} years old.")
 
 class Pets:
 
@@ -59,13 +60,26 @@ my_dogs = [
     Dog("Larry", 9)
 ]
 
-my_pets = Pets(my_dogs)
-print(my_pets.amount_pets())
+# my_pets = Pets(my_dogs)
+# print(my_pets.amount_pets())
 
+# for dog in my_dogs:
+#   print(f"{dog.name} is {dog.age} years old.")
+
+# print(f"And they are all {dog.species}s of course.")
 for dog in my_dogs:
-  print(f"{dog.name} is {dog.age} years old.")
+  dog.eat()
 
-print(f"And they are all {dog.species}s of course.")
+dogs_are_hungry = False
+for dog in my_dogs:
+  if dog.is_hungry:
+    dogs_are_hungry = True
+
+if dogs_are_hungry == True:
+  print("My dogs are hungry")
+else:
+  print("My dogs are not hungry.")
+
 
 
 
