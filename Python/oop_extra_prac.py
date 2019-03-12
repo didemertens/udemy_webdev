@@ -21,6 +21,8 @@ class Dog:
     def eat(self):
         self.is_hungry = False
 
+    def walk(self):
+      return f"{self.name} is walking!"
 
 # Child class (inherits from Dog class)
 class RussellTerrier(Dog):
@@ -43,7 +45,7 @@ class Bulldog(Dog):
 # oldest = get_biggest_number(sam.age,bobby.age,nora.age)
 # print(f"The oldest dog is {oldest} years old.")
 
-class Pets:
+class Pets(Dog):
 
     animals = []
 
@@ -53,6 +55,14 @@ class Pets:
     def amount_pets(self):
       return f"I have {len(self.animals)} pets."
 
+    def walkie(self):
+      for dog in self.animals:
+        print(dog.walk())
+
+    def list_animals(self):
+      return self.animals
+
+
 
 my_dogs = [
     Bulldog("Tom", 6),
@@ -60,26 +70,25 @@ my_dogs = [
     Dog("Larry", 9)
 ]
 
-# my_pets = Pets(my_dogs)
+my_pets = Pets(my_dogs)
 # print(my_pets.amount_pets())
 
 # for dog in my_dogs:
 #   print(f"{dog.name} is {dog.age} years old.")
 
 # print(f"And they are all {dog.species}s of course.")
-for dog in my_dogs:
-  dog.eat()
 
-dogs_are_hungry = False
-for dog in my_dogs:
-  if dog.is_hungry:
-    dogs_are_hungry = True
+# for dog in my_dogs:
+#   dog.eat()
 
-if dogs_are_hungry == True:
-  print("My dogs are hungry")
-else:
-  print("My dogs are not hungry.")
+# dogs_are_hungry = False
+# for dog in my_dogs:
+#   if dog.is_hungry:
+#     dogs_are_hungry = True
 
+# if dogs_are_hungry == True:
+#   print("My dogs are hungry")
+# else:
+#   print("My dogs are not hungry.")
 
-
-
+my_pets.walkie()
