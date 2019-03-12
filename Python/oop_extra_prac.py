@@ -42,6 +42,30 @@ def get_biggest_number(*args):
 oldest = get_biggest_number(sam.age,bobby.age,nora.age)
 print(f"The oldest dog is {oldest} years old.")
 
+class Pets:
+
+    animals = []
+
+    def __init__(self, animals):
+        self.animals = animals
+
+    def amount_pets(self):
+      return f"I have {len(self.animals)} pets."
+
+
+my_dogs = [
+    Bulldog("Tom", 6),
+    RussellTerrier("Fletcher", 7),
+    Dog("Larry", 9)
+]
+
+my_pets = Pets(my_dogs)
+print(my_pets.amount_pets())
+
+for dog in my_dogs:
+  print(f"{dog.name} is {dog.age} years old.")
+
+print(f"And they are all {dog.species}s of course.")
 
 
 
