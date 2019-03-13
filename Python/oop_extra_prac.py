@@ -37,7 +37,7 @@ class Bulldog(Dog):
 
 # sam = Dog("Sam",9)
 # bobby = Dog("Bobby",2)
-# # nora = Dog("Nora",4)
+nora = Dog("Nora",4)
 
 # def get_biggest_number(*args):
 #   return max(args)
