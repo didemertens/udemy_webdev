@@ -1,6 +1,6 @@
 from oop_farm_animalcl import *
 
-class Cows(Animals):
+class Cow(Animals):
   def __init__(self):
     super().__init__(15,15,10)
     self._type = "Cow"
