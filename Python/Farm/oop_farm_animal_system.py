@@ -110,7 +110,5 @@ def main():
   new_animal = create_animal()
   manage_animal(new_animal)
 
-
-
 if __name__ == "__main__":
   main()
