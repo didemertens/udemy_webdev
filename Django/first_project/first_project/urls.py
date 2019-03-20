@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from first_app import views
+from django.urls import path, include
 
 urlpatterns = [
     path('', views.index,name='index'),
+    path('new_first_app/',include('first_app.urls')),
+    # You can call it whatever you want, and then add it to the url ../new_first_app
     path('admin/', admin.site.urls),
 ]
