@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-  return HttpResponse("<em>My Second App</em>")
+  my_dict = {'help_me': "Hello there, what can I help you with?"}
+  return render(request, 'second_app/index.html',context=my_dict)
+
