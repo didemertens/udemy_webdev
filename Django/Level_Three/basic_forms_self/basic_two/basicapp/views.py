@@ -13,7 +13,7 @@ def form_page(request):
 
   if form.is_valid():
     # return HttpResponse('Thanks '+ form.cleaned_data['name'] + '!')
-    return HttpResponseRedirect('thanks/')
+    return HttpResponseRedirect('/form/thanks/')
   else:
     form = forms.NameForm()
   return render(request,'basicapp/nameform.html',{'form':form})
