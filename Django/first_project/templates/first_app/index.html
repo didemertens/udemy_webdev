@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html>
-<head>
-  <title>Vita Quote Page</title>
-  <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css"%}">
-</head>
-<body>
-  <h1>Hello, this is a quote of Vita</h1>
-<!--   {{ insert_me }} </-->
-<img src="{% static "images/vita.jpg" %}" alt="Image not found">
+  <head>
+    <title>Django L2</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}">
+  </head>
+  <body>
+    <h1>Hi, welcome to Django L2!</h1>
+    <h2>Here are your access records:</h2>
 
+    <div class="djangtwo">
+      {% if access_records %}
+      <table>
+        <thead>
+          <th>Site name</th>
+          <th>Date accessed</th>
+        </thead>
+      {% for acc in access_records %}
+      <tr>
+        <td>{{ acc.name }}</td>
+        <td>{{ acc.date }}</td>
+      </tr>
+      {% endfor %}
+      </table>
+      {% else %}
+      <p>No access records found!</p>
+      {% endif %}
+    </div>
 
-</body>
+  </body>
 </html>
