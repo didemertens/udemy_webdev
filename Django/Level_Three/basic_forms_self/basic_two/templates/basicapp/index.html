@@ -1,15 +1,24 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
   <title>Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static "css/index_style.css" %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-  <div class=container>
-    <div class=jumbotron>
-        <h1>Hello</h1>
-        <p>Go to /form to see the form.</p>
+    <div class=jumbotron .jumbotron-fluid>
+      <div class=container>
+        <h1>Hello there!</h1>
+        <p>Go to /form to see the form or click on the button below.</p>
     </div>
+  </div>
+
+  <div>
+    <i id ="folder" class="far fa-folder"></i>
+    <p>If you want, you can fill in your name and email in the form.</p>
+    <a href="form/" id="lowerbtn">Click here</a>
   </div>
 
 

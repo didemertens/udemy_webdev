@@ -1,0 +1,18 @@
+h3{
+  text-align: center;
+  margin: 20px;
+}
+
+form{
+  text-align: center;
+}
+
+.btn-primary{
+  background-color: #061E3F;
+  border-color: #061E3F;
+}
+
+.btn-primary:hover{
+  background-color: #748CAB;
+  border-color: #748CAB;
+}

@@ -1,0 +1,32 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #EFEEEA;
+}
+
+h1{
+  margin: 20px;
+}
+
+#folder {
+  font-size: 50px;
+}
+
+#lowerbtn{
+  border: 2px solid #061E3F;
+  background-color: #061E3F;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#lowerbtn:hover{
+  border-color: #748CAB;
+  background-color: #748CAB;
+  text-decoration: none;
+}
+
+.jumbotron{
+  background-color: #364F66;
+  color: white;
+}
