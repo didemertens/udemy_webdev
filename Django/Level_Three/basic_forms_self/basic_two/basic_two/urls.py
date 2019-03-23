@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
     path('form/',views.form_page),
+    path('thanks/',views.thanks),
 ]
