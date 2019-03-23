@@ -25,5 +25,3 @@ if __name__ == '__main__':
   print('populating script!')
   populate(10)
   print('populating complete')
-
-
