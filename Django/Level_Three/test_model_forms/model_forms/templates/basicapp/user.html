@@ -10,9 +10,11 @@
       <div class="container">
       <h1>User form</h1>
       <p>You can leave your name and email here.</p>
-      {{ form.as_p }}
-      {% csrf_token %}
-      <input type="submit" class="btn btn-primary" value="Submit">
+        <form method='POST'>
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
       </div>
     </div>
   </body>
