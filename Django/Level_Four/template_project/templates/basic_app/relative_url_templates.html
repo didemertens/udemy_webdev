@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-</head>
-<body>
-  <h1>Welcome to relative url templates</h1>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to relative url templates</h1>
+    <a href="{% url 'basic_app:other' %}">The other page</a>
+    <a href="{% url 'admin:index' %}">Admin page</a>
+    <a href="{% url 'index' %}">Link to index</a>
 
-</body>
+<!--     basic app because of the global variable (app_name) set up in urls.py in basic app itself. -->
+<!-- Can admin:index because it's in installed apps in settings, need to migrate it first -->
+
+  </body>
 </html>
