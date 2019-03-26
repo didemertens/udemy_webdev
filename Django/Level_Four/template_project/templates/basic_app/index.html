@@ -2,5 +2,7 @@
 {% extends "basic_app/base.html" %}
   {% block body_block %}
     <h1>Welcome to index</h1>
-    <h1>this is index.html page showing!</h1>
+<!--     <h1>this is index.html page showing!</h1> -->
+    <h1>{{ text|upper }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
   {% endblock %}
