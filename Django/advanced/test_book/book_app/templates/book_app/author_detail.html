@@ -1,0 +1,16 @@
+{% extends 'book_app/book_app_base.html' %}
+{% block body_block %}
+
+<div class=jumbotron>
+<h1>Welcome to the book page!</h1>
+<ul>
+    <li>Name: {{ author_detail.name }}</li>
+    <li>Birthplace: {{ author_detail.birthplace }}</li>
+    <li>Year born: {{ author_detail.born }}</li>
+  </ul>
+  {% for book in author_detail.books.all %}
+    <p>{{ book.title }} was published in {{ book.published }}.</p>
+  {% endfor %}
+</div>
+
+{% endblock %}
