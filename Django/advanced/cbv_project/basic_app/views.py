@@ -29,7 +29,7 @@ class SchoolListView(ListView):
   # returns a list with the name school_list, if you want to define your own name add contect_object_name
 
 class SchoolDetailView(DetailView):
-  contect_object_name = 'school_detail'
+  context_object_name = 'school_details'
   model = models.School
   template_name = 'basic_app/school_detail.html'
 

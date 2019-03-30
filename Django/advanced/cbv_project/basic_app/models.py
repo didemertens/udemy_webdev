@@ -12,7 +12,7 @@ class School(models.Model):
 class Student(models.Model):
   name = models.CharField(max_length=256)
   age = models.PositiveIntegerField()
-  school = models.ForeignKey(School,related_name='students',on_delete=models.PROTECT)
+  school = models.ForeignKey(School,related_name='students',on_delete=models.CASCADE)
 
 # foreign key because you want to use the School class
 

@@ -4,9 +4,10 @@
 <h1>Welcome to a list of all the schools</h1>
   <ol>
     {% for school in schools %}
-    <h3><li>{{ school.name }}</li></h3>
+    <h3><li><a href="{{ school.id }}">{{ school.name }}</a></li></h3>
     {% endfor %}
   </ol>
 
-
+<!--
+because we didn't add a primary key in models, django automatically makes an id for each entry. -->
 {% endblock %}
