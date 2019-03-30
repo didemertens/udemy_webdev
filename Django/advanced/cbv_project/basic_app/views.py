@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import View, TemplateView, ListView, DetailView
+from django.views.generic import (View, TemplateView, ListView, DetailView,
+                                  CreateView, UpdateView, DeleteView)
 from . import models
+from django.urls import reverse_lazy
 
 # from django.http import HttpResponse
 
@@ -25,12 +27,23 @@ class IndexView(TemplateView):
 class SchoolListView(ListView):
   context_object_name = 'schools'
   model = models.School
-
   # returns a list with the name school_list, if you want to define your own name add contect_object_name
 
 class SchoolDetailView(DetailView):
   context_object_name = 'school_details'
   model = models.School
   template_name = 'basic_app/school_detail.html'
+  # returns the model in lower case, not with _detail
 
-# returns the model in lower case, not with _detail
+class SchoolCreateView(CreateView):
+  fields = ('name','principal','location')
+  model = models.School
+# django creates a form for createview (school_form)
+
+class SchoolUpdateView(UpdateView):
+  fields = ('name','principal')
+  model = models.School
+
+class SchoolDeleteView(DeleteView):
+  model = models.School
+  success_url = reverse_lazy('basic_app:list')
