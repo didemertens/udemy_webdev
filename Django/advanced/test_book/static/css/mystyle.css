@@ -2,6 +2,13 @@ h1 {
   text-align: center;
 }
 
+#linkauth {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+}
+
 .typewriter h1{
   overflow: hidden;
   border-right: .10em solid transparent;

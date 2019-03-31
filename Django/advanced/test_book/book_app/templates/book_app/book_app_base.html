@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <ul class="navbar-nav">
-        <li><a class="navbar-brand" href="#"><img src="https://banner2.kisspng.com/20180426/wsw/kisspng-drawing-book-clip-art-drawing-books-5ae171d4079674.9729456915247241800311.jpg" width="40" height="40" class="d-inline-block align-top" alt="">Books</a></li>
+        <li><a class="navbar-brand" href="{% url 'index' %}"><img src="https://banner2.kisspng.com/20180426/wsw/kisspng-drawing-book-clip-art-drawing-books-5ae171d4079674.9729456915247241800311.jpg" width="40" height="40" class="d-inline-block align-top" alt="">Books</a></li>
         <li class="nav-item"><a class="nav-link" href="{% url 'admin:index' %}">Admin</a></li>
         <li class="nav-item"><a class="nav-link" href="{% url 'book_app:list' %}">Authors</a></li>
       </ul>
@@ -24,7 +24,7 @@
     <p id="quote">You can never get a cup of tea large enough or a book long enough to suit me. - C.S. Lewis</p>
   </div>
 
-   <div container=class>
+   <div class="container">
       {% block body_block %}
       {% endblock %}
     </div>
