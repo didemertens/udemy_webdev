@@ -3,10 +3,20 @@ h1 {
 }
 
 #linkauth {
-  margin: 20px;
+  text-align: center;
+  margin: 50px 0px 0px;
+}
+
+#buttonauthor {
+  padding: 10px;
   text-decoration: none;
   color: black;
   border: 2px solid black;
+}
+
+#buttonauthor:hover{
+  color: grey;
+  border: 2px solid grey;
 }
 
 .typewriter h1{
