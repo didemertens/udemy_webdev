@@ -90,17 +90,3 @@ def comment_remove(request,pk):
   return redirect('post_detail',pk=post_pk)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
