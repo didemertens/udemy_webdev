@@ -8,10 +8,29 @@
   font-size: 1.5em;
 }
 
+.custom-nav a{
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.custom-nav a:hover{
+  color: grey;
+}
+
 .loader{
   filter:hue-rotate(0deg);
   color: linear-gradient(45deg,#0f8,#08f);
   animation:hue 5000ms infinite linear;
+}
+
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: 'Scope One', serif;*/
 }
 
 @keyframes spinify {
