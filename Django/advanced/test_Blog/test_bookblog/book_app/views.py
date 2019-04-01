@@ -8,8 +8,11 @@ class IndexView(TemplateView):
   template_name = 'book_app/index.html'
 
 
-def BlogView(ListView):
-  model = Blog
+# class BlogView(ListView):
+#   model = Blog
 
-  def get_blog_posts(self):
-    return Blog.objects.filter(by_date)
+#   def get_blog_posts(self):
+#     return Blog.objects.filter(by_date)
+
+def blog_view(request):
+  return render(request, 'book_app/view_blogs.html')
