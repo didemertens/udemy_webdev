@@ -15,4 +15,9 @@ class IndexView(TemplateView):
 #     return Blog.objects.filter(by_date)
 
 def blog_view(request):
-  return render(request, 'book_app/view_blogs.html')
+  blogs = Blog.objects.all()
+  context = {
+  'title': 'Latest Posts',
+  'blogs' : blogs
+  }
+  return render(request, 'book_app/view_blogs.html',context)

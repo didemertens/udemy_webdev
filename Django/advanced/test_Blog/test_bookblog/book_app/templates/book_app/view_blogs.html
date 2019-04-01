@@ -1,6 +1,11 @@
 {% extends "book_app/base.html" %}
 {% block body_block %}
 
-<h1>Blogs</h1>
+<h1>Latest Posts</h1>
+
+{% for blog in blogs %}
+<h3 class="collection-item">{{ blog.title }}</h3>
+<p>{{ blog.body }}</p>
+{% endfor %}
 
 {% endblock %}
