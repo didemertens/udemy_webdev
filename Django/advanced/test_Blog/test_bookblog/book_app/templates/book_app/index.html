@@ -1,5 +1,5 @@
 {% extends "book_app/base.html" %}
-{% block body_block%}
+{% block body_block %}
 <div class="typewriter"><h1>Hi there, book lover!</h1></div>
 
 <div class="cards">
@@ -12,5 +12,6 @@
     <p>Last year <strong>190 million</strong> books were sold in the UK!</p>
   </div>
 </div>
-<div id="linkblog"><a id = "buttonblog" href="#">Read blogs</a></div>
+<div id="linkblog"><a id = "buttonblog" href="{% url 'book_app:blogs' %}">Read blogs</a></div>
+
 {% endblock %}
