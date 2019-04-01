@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+}
+
+#linkblog {
+  text-align: center;
+  margin: 50px 0px 0px;
+}
+
+#buttonblog {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+#buttonblog:hover{
+  color: grey;
+  border: 2px solid grey;
+}
+
+.typewriter h1{
+  overflow: hidden;
+  border-right: .10em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 3;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+body {
+  font-family: 'Sree Krushnadevaraya', serif;
+}
+
+.carousel{
+  width: 300px;
+  box-shadow: 2px 2px 3px #9ea2a8;
+  text-align: center;
+  margin: 80px 0px;
+  padding: 20px;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer{
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: #707172;
+  color: white;
+}
+
+.footer a{
+  color: white;
+  opacity: 0.5;
+  margin: 20px;
+  font-size: 50px;
+}
+
+.footer a:hover{
+  color: white;
+  opacity: 2;
+}
+
+#quote {
+  line-height: 80px;
+}
