@@ -44,19 +44,22 @@ body {
   font-family: 'Sree Krushnadevaraya', serif;
 }
 
-.carousel{
-  width: 300px;
-  box-shadow: 2px 2px 3px #9ea2a8;
-  text-align: center;
-  margin: 80px 0px;
-  padding: 20px;
-}
-
 .cards{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.carousel{
+  width: 300px;
+  box-shadow: 2px 2px 3px #9ea2a8;
+  margin: 80px 0px;
   padding: 20px;
+  text-align: center;
+}
+
+#carousel_middle{
+  width: 30px;
 }
 
 .footer{
