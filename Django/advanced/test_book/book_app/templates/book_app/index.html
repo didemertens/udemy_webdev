@@ -1,0 +1,16 @@
+{% extends "book_app/base.html" %}
+{% block body_block%}
+<div class="typewriter"><h1>Hi there, book lover!</h1></div>
+<div id="linkauth"><a id = "buttonauthor" href="{% url 'list' %}">Discover authors</a></div>
+
+<div class="cards">
+  <div class="carousel">
+    <h3>129</h3>
+    <p>There are <strong>129,864,880</strong> books in the world!</p>
+  </div>
+  <div class="carousel">
+    <h3>190</h3>
+    <p>Last year <strong>190 million</strong> books were sold in the UK!</p>
+  </div>
+</div>
+{% endblock %}
