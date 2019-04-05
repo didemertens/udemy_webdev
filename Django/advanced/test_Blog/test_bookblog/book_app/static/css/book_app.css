@@ -10,13 +10,13 @@ h1 {
 #buttonblog {
   text-decoration: none;
   color: black;
-  border: 2px solid black;
+  border: 1px outset #93969b;
+  box-shadow: 2px 2px 3px #9ea2a8;
   padding: 20px;
 }
 
 #buttonblog:hover{
   color: grey;
-  border: 2px solid grey;
 }
 
 .typewriter h1{
@@ -44,18 +44,22 @@ body {
   font-family: 'Sree Krushnadevaraya', serif;
 }
 
-.carousel{
-  width: 300px;
-  box-shadow: 2px 2px 3px #9ea2a8;
-  text-align: center;
-  margin: 80px 0px;
-  padding: 20px;
-}
-
 .cards{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.carousel{
+  width: 300px;
+  box-shadow: 2px 2px 3px #9ea2a8;
+  margin: 80px 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+#carousel_middle{
+  width: 30px;
 }
 
 .footer{
