@@ -3,9 +3,10 @@
 
 <h1>Latest Posts</h1>
 
-{% for blog in blogs %}
-<h3 class="collection-item">{{ blog.title }}</h3>
-<p>{{ blog.body }}</p>
+{% for blog in blog_list %}
+
+<h3 class="collection-item" href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.title }}</h3>
+<!-- <p>{{ blog.body }}</p> -->
 {% endfor %}
 
 {% endblock %}
