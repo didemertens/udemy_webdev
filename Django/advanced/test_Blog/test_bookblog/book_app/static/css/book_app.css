@@ -1,3 +1,12 @@
+body {
+  font-family: 'Sree Krushnadevaraya', serif;
+  padding-bottom: 80px;
+}
+
+#navbar-item{
+  font-size: 16px;
+}
+
 h1 {
   text-align: center;
 }
@@ -70,11 +79,6 @@ h1 {
   50% { border-color: black }
 }
 
-body {
-  font-family: 'Sree Krushnadevaraya', serif;
-  padding-bottom: 80px;
-}
-
 .cards{
   display: flex;
   flex-direction: row;
@@ -115,6 +119,6 @@ body {
   opacity: 2;
 }
 
-#quote {
+#quote{
   line-height: 80px;
 }
