@@ -5,7 +5,9 @@
 
 {% for blog in blog_list %}
 
-  <h3 class="collection-item"><a href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.title }}</a></h3>
+  <ul id="blog-list">
+    <li><a id="blog-title" href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.title }}</a></li>
+  </ul>
 <!-- <p>{{ blog.body }}</p> -->
 {% endfor %}
 

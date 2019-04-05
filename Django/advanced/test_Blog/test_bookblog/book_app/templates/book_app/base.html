@@ -16,17 +16,18 @@
         </ul>
       </nav>
 
-   <div class="footer">
-    <ul class=list-inline>
-      <li class="list-items"><a target="_blank" href="https://goodreads.com/"><i class="fab fa-goodreads"></i></a></li>
-    </ul>
-    <p id="quote">You can never get a cup of tea large enough or a book long enough to suit me. - C.S. Lewis</p>
-  </div>
+      <div class="container">
+        {% block body_block %}
+        {% endblock %}
+      </div>
 
-   <div class="container">
-      {% block body_block %}
-      {% endblock %}
+    <div class="footer">
+      <ul class=list-inline>
+        <li class="list-items"><a target="_blank" href="https://goodreads.com/"><i class="fab fa-goodreads"></i></a></li>
+      </ul>
+      <p id="quote">You can never get a cup of tea large enough or a book long enough to suit me. - C.S. Lewis</p>
     </div>
 
   </body>
+
 </html>

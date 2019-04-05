@@ -30,6 +30,35 @@ h1 {
     blink-caret .75s step-end 3;
 }
 
+#blog-list{
+  list-style: circle outside none;
+  color: #9ea2a8;
+}
+
+#blog-title {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#blog-title:hover{
+  color: orange;
+}
+
+#blog-detail-title{
+  text-align: center;
+}
+
+#blog-detail-posted{
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#blog-detail-body{
+  margin: 50px;
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 60% }
@@ -42,6 +71,7 @@ h1 {
 
 body {
   font-family: 'Sree Krushnadevaraya', serif;
+  padding-bottom: 80px;
 }
 
 .cards{
@@ -64,8 +94,8 @@ body {
 
 .footer{
   position: fixed;
-  height: 80px;
   bottom: 0;
+  height: 80px;
   width: 100%;
   display: flex;
   background-color: #707172;
