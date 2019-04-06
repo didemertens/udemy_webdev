@@ -23,10 +23,12 @@ h1 {
   border: 1px outset #93969b;
   box-shadow: 2px 2px 3px #9ea2a8;
   padding: 20px;
+  border-radius: 15px;
 }
 
 #buttonblog:hover{
-  color: grey;
+  color: orange;
+  border: 1px solid orange;
 }
 
 .typewriter h1{
@@ -84,6 +86,12 @@ h1 {
   justify-content: center;
   width: 50%;
   padding-left: 110px;
+}
+
+.btn:hover{
+  color: orange;
+  background-color: white;
+  border: 1px solid orange;
 }
 
 @keyframes typing {
