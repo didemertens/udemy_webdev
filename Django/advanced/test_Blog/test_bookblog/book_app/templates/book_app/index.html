@@ -2,20 +2,37 @@
 {% block body_block %}
 <div class="typewriter"><h1>Hi there, book lover!</h1></div>
 
-<div class="cards">
-  <div class="carousel">
-    <h3>129</h3>
-    <p>There are <strong>129,864,880</strong> books in the world!</p>
+<!-- <div class="cards">
+  <div class="carousel"> -->
+
+<div class=cards>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>129</h1>
+        <h4>books in the world</h4>
+      </div>
+      <div class="flip-card-back">
+        <h5>There are 129,864,880 books in the world!</h5>
+      </div>
+    </div>
   </div>
-  <div id="carousel_middle">
-    <h3></h3>
-    <p></p>
+  <div id="middle-card">
+   <p></p>
   </div>
-  <div class="carousel">
-    <h3>190</h3>
-    <p>Last year <strong>190 million</strong> books were sold in the UK!</p>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>190</h1>
+        <h4>million sold in UK</h4>
+      </div>
+      <div class="flip-card-back">
+        <h5>Last year 190 million books were sold in the UK!</h5>
+      </div>
+    </div>
   </div>
 </div>
+
 <div id="linkblog"><a id = "buttonblog" href="{% url 'book_app:blog_list' %}">Read blogs</a></div>
 
 {% endblock %}
