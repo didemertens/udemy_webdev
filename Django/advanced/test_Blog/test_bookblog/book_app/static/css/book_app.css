@@ -1,6 +1,7 @@
 body {
   font-family: 'Sree Krushnadevaraya', serif;
   padding-bottom: 80px;
+  font-size: 16px;
 }
 
 #navbar-item{
@@ -10,6 +11,10 @@ body {
 
 h1 {
   text-align: center;
+}
+
+h4, h5{
+  font-size: 19px;
 }
 
 #linkblog {
@@ -62,6 +67,15 @@ h1 {
   font-family: 'Roboto Mono', monospace;
 }
 
+.grey{
+  color: grey;
+  padding: 20px 5px;
+}
+
+.grey:hover{
+  color: orange;
+}
+
 .post-bar{
   margin: 20px;
   display: flex;
@@ -69,9 +83,9 @@ h1 {
   justify-content: center;
 }
 
-.blog-title-between{
+/*.blog-title-between{
   width: 10px;
-}
+}*/
 
 #blog-detail-posted{
   text-align: center;
@@ -133,7 +147,7 @@ label{
 
 .author-comment{
   font-family: 'Sree Krushnadevaraya', serif;
-  margin: 10px 44%;
+  margin: 10px 43%;
   border: 3px solid #e1e4ea;
   border-radius: 2px;
 }
