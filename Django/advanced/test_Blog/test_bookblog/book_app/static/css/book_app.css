@@ -11,7 +11,7 @@ body {
 }
 
 #navbar-item:hover{
-  color: orange;
+  color: #F6BD60;
 }
 
 h1 {
@@ -37,8 +37,8 @@ h4, h5{
 }
 
 #buttonblog:hover{
-  color: orange;
-  border: 1px solid orange;
+  color: #F6BD60;
+  border: 1px solid #F6BD60;
 }
 
 .typewriter h1{
@@ -54,7 +54,7 @@ h4, h5{
 
 #blog-list{
   list-style: decimal-leading-zero;
-  color: orange;
+  color: #F6BD60;
   font-size:  30px;
   margin: 20px;
   padding: 0px 5%;
@@ -73,7 +73,7 @@ h4, h5{
 }
 
 #blog-title:hover{
-  color: orange;
+  color: #F6BD60;
 }
 
 #blog-detail-title{
@@ -82,12 +82,12 @@ h4, h5{
 }
 
 .grey{
-  color: grey;
+  color: #9ea2a8;
   padding: 20px 5px;
 }
 
 .grey:hover{
-  color: orange;
+  color: #F6BD60;
 }
 
 .post-bar{
@@ -98,7 +98,7 @@ h4, h5{
 }
 
 #blog-detail-posted{
-  text-align: center;
+  margin: 30px 50px;
   font-size: 14px;
   font-style: italic;
 }
@@ -128,9 +128,9 @@ h4, h5{
 }
 
 .btn:hover{
-  color: orange;
+  color: #F6BD60;
   background-color: white;
-  border: 1px solid orange;
+  border: 1px solid #F6BD60;
 }
 
 label{
@@ -230,7 +230,7 @@ label{
 }
 
 .flip-card-back {
-  background-color: orange;
+  background-color: #F6BD60;
   color: white;
   transform: rotateY(180deg);
   padding: 50px;
