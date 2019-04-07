@@ -5,6 +5,7 @@ body {
 }
 
 #navbar-item{
+  padding: 15px;
   font-size: 16px;
   font-family: 'Roboto Mono', monospace;
 }
@@ -23,10 +24,10 @@ h4, h5{
 }
 
 #buttonblog {
+  font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   color: black;
-  border: 1px outset #93969b;
-  box-shadow: 2px 2px 3px #9ea2a8;
+  border: 1px solid #9ea2a8;
   padding: 20px;
   border-radius: 15px;
 }
@@ -44,18 +45,27 @@ h4, h5{
   letter-spacing: .15em;
   animation:
     typing 3.5s steps(40, end),
-    blink-caret .75s step-end 3;
+    blink-caret .65s step-end 3;
 }
 
 #blog-list{
-  list-style: circle outside none;
-  color: #9ea2a8;
+  list-style: decimal-leading-zero;
+  color: orange;
+  font-size:  30px;
+  margin: 20px;
+  padding: 0px 5%;
+}
+
+.container-list{
+  border: 2px solid #e1e4ea;
+  margin-bottom: 10px;
 }
 
 #blog-title {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  padding: 10px;
 }
 
 #blog-title:hover{
@@ -82,10 +92,6 @@ h4, h5{
   flex-direction: row;
   justify-content: center;
 }
-
-/*.blog-title-between{
-  width: 10px;
-}*/
 
 #blog-detail-posted{
   text-align: center;
@@ -188,6 +194,7 @@ label{
   width: 300px;
   height: 200px;
   perspective: 1000px;
+  margin: 55px 30px;
 }
 
 .flip-card-inner {

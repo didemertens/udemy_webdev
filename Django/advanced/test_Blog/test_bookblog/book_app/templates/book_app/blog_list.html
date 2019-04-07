@@ -3,12 +3,15 @@
 
 <h1>Latest Posts</h1>
 
-{% for blog in blog_list %}
+<div class="container-list">
+  <ol id="blog-list">
 
-  <ul id="blog-list">
+{% for blog in blog_list %}
     <li><a id="blog-title" href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.title }}</a></li>
-  </ul>
-<!-- <p>{{ blog.body }}</p> -->
+    <hr>
 {% endfor %}
+  </ol>
+</div>
+
 
 {% endblock %}
