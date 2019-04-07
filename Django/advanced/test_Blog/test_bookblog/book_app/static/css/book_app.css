@@ -205,7 +205,7 @@ label{
   width: 300px;
   height: 200px;
   perspective: 1000px;
-  margin: 30px 30px 55px;
+  margin: 30px 30px 40px;
 }
 
 .flip-card-inner {
@@ -237,7 +237,7 @@ label{
 }
 
 .flip-card-back {
-  background-color: #F6BD60;
+  background-color: #2d4c82;
   color: white;
   transform: rotateY(180deg);
   padding: 50px;
