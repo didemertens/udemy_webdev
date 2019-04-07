@@ -1,7 +1,9 @@
-from django.views.generic import TemplateView,ListView,DetailView
+from django.views.generic import TemplateView,ListView,DetailView,CreateView
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from book_app.models import Blog,Comment
-from .forms import CommentForm
+from .forms import PostForm, CommentForm
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -12,6 +14,13 @@ class BlogListView(ListView):
 
 class BlogDetailView(DetailView):
   model = Blog
+
+class CreatePostView(LoginRequiredMixin,CreateView):
+  login_url = '/login/'
+  redirected_field_name='book_app/blog_detail.html'
+  form_class = PostForm
+  model = Blog
+
 
 def add_comment_to_post(request, pk):
   blog = get_object_or_404(Blog, pk=pk)

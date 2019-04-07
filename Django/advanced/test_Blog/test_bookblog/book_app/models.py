@@ -8,7 +8,7 @@ class Blog(models.Model):
   posted = models.DateField(db_index=True, auto_now_add=True)
 
   def get_absolute_url(self):
-    return reverse("book_app:detail_blogs",kwargs={'pk':self.pk})
+    return reverse("book_app:blog_detail",kwargs={'pk':self.pk})
 
   def __str__(self):
     return self.title
