@@ -1,7 +1,8 @@
-from django.views.generic import TemplateView,ListView,DetailView,CreateView,UpdateView, DeleteView,
+from django.views.generic import TemplateView,ListView,DetailView,CreateView,UpdateView, DeleteView
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from book_app.models import Blog,Comment
 from .forms import PostForm, CommentForm
 
@@ -27,6 +28,9 @@ class PostUpdateView(LoginRequiredMixin,UpdateView):
   form_class = PostForm
   model = Blog
 
+class PostDeleteView(LoginRequiredMixin,DeleteView):
+  model = Blog
+  success_url = reverse_lazy('book_app:blog_list')
 
 def add_comment_to_post(request, pk):
   blog = get_object_or_404(Blog, pk=pk)
