@@ -10,6 +10,10 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+#navbar-item:hover{
+  color: orange;
+}
+
 h1 {
   text-align: center;
 }
@@ -41,7 +45,7 @@ h4, h5{
   overflow: hidden;
   border-right: .10em solid transparent;
   white-space: nowrap;
-  margin: 0 auto;
+  margin: 25px auto;
   letter-spacing: .15em;
   animation:
     typing 3.5s steps(40, end),
@@ -194,7 +198,7 @@ label{
   width: 300px;
   height: 200px;
   perspective: 1000px;
-  margin: 55px 30px;
+  margin: 30px 30px 55px;
 }
 
 .flip-card-inner {
