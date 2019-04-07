@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView,ListView,DetailView,CreateView
+from django.views.generic import TemplateView,ListView,DetailView,CreateView,UpdateView, DeleteView,
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -18,6 +18,12 @@ class BlogDetailView(DetailView):
 class CreatePostView(LoginRequiredMixin,CreateView):
   login_url = '/login/'
   redirected_field_name='book_app/blog_detail.html'
+  form_class = PostForm
+  model = Blog
+
+class PostUpdateView(LoginRequiredMixin,UpdateView):
+  login_url = '/login/'
+  redirect_field_name = 'book_app/blog_detail.html'
   form_class = PostForm
   model = Blog
 
