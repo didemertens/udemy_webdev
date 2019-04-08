@@ -32,9 +32,12 @@ class PostDeleteView(LoginRequiredMixin,DeleteView):
   model = Blog
   success_url = reverse_lazy('book_app:blog_list')
 
-class CommentDeleteView(LoginRequiredMixin,DeleteView):
-  model = Comment
-  success_url = reverse_lazy('book_app:blog_detail')
+@login_required
+def comment_remove(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
+    blog_pk = comment.blog.pk
+    comment.delete()
+    return redirect('book_app:blog_detail', pk=blog_pk)
 
 def add_comment_to_post(request, pk):
   blog = get_object_or_404(Blog, pk=pk)

@@ -22,8 +22,10 @@
 </div>
   {% for comment in blog.comments.all %}
     <div class="comment-part">
-      <a href="{% url 'book_app:comment_remove' pk=blog.pk %}"><i class=" glyphicon glyphicon-remove grey"></i></a>
       <strong>{{ comment.author }}</strong>
+      {% if user.is_authenticated %}
+        <a href="{% url 'book_app:comment_remove' pk=comment.pk %}"><i class=" glyphicon glyphicon-remove grey"></i></a>
+      {% endif %}
       <p>{{ comment.text|linebreaks }}</p>
     </div>
   {% empty %}
