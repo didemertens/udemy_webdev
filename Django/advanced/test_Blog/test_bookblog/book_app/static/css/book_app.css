@@ -115,6 +115,7 @@ h4, h5{
 }
 
 .comment-part{
+  position: relative;
   margin: 20px auto;
   padding: 10px;
   border: 1px #93969b;
@@ -127,6 +128,12 @@ h4, h5{
   justify-content: center;
   width: 50%;
   padding-left: 100px;
+}
+
+#remove-comment{
+  position: absolute;
+  top: -10px;
+  right: 10px;
 }
 
 .btn{
@@ -164,7 +171,7 @@ label{
 
 .author-comment{
   font-family: 'Sree Krushnadevaraya', serif;
-  margin: 10px 43%;
+  margin: 10px 42.5%;
   border: 3px solid #e1e4ea;
   border-radius: 2px;
 }
