@@ -17,7 +17,7 @@
 
 <hr>
 
-<div id="comment-button">
+<div id="comment-blog-button">
   <a class="btn btn-outline-secondary" href="{% url 'book_app:add_comment_to_post' pk=blog.pk %}">Add comment</a>
 </div>
 {% for comment in blog.comments.all %}

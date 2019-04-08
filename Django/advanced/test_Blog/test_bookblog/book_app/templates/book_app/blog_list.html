@@ -8,7 +8,8 @@
 
 {% for blog in blog_list %}
     <li><a id="blog-title" href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.title }}</a></li>
-    <hr>
+    <a id="blog-intro" href="{% url 'book_app:blog_detail' pk=blog.pk %}">{{ blog.intro }}</a>
+  <hr id="list-line">
 {% endfor %}
   </ol>
 </div>

@@ -5,10 +5,11 @@ class PostForm(forms.ModelForm):
 
   class Meta:
     model = Blog
-    fields = ('title', 'body')
+    fields = ('title', 'intro','body')
 
     widgets = {
     'title': forms.TextInput(attrs={'class': 'post-title'}),
+    'intro': forms.Textarea(attrs={'class': 'post-intro'}),
     'body': forms.Textarea(attrs={'class': 'post-content'}),
     }
 
