@@ -32,6 +32,10 @@ class PostDeleteView(LoginRequiredMixin,DeleteView):
   model = Blog
   success_url = reverse_lazy('book_app:blog_list')
 
+class CommentDeleteView(LoginRequiredMixin,DeleteView):
+  model = Comment
+  success_url = reverse_lazy('book_app:blog_detail')
+
 def add_comment_to_post(request, pk):
   blog = get_object_or_404(Blog, pk=pk)
   if request.method == "POST":

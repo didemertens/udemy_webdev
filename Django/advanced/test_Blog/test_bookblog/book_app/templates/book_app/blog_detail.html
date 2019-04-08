@@ -22,6 +22,7 @@
 </div>
   {% for comment in blog.comments.all %}
     <div class="comment-part">
+      <a href="{% url 'book_app:comment_remove' pk=blog.pk %}"><i class=" glyphicon glyphicon-remove grey"></i></a>
       <strong>{{ comment.author }}</strong>
       <p>{{ comment.text|linebreaks }}</p>
     </div>

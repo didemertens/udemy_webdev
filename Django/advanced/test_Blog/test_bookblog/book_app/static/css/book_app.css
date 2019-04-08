@@ -11,7 +11,7 @@ body {
 }
 
 #navbar-item:hover{
-  color: #F6BD60;
+  color: #F9CD66;
 }
 
 #navbar-image{
@@ -44,8 +44,8 @@ h4, h5{
 }
 
 #buttonblog:hover{
-  color: #F6BD60;
-  border: 1px solid #F6BD60;
+  color: #F9CD66;
+  border: 1px solid #F9CD66;
 }
 
 .typewriter h1{
@@ -61,7 +61,7 @@ h4, h5{
 
 #blog-list{
   list-style: decimal-leading-zero;
-  color: #F6BD60;
+  color: #F9CD66;
   font-size:  30px;
   margin: 20px;
   padding: 0px 5%;
@@ -80,7 +80,7 @@ h4, h5{
 }
 
 #blog-title:hover{
-  color: #F6BD60;
+  color: #F9CD66;
 }
 
 #blog-detail-title{
@@ -94,7 +94,7 @@ h4, h5{
 }
 
 .grey:hover{
-  color: #F6BD60;
+  color: #F9CD66;
 }
 
 .post-bar{
@@ -135,9 +135,9 @@ h4, h5{
 }
 
 .btn:hover{
-  color: #F6BD60;
+  color: #F9CD66;
   background-color: white;
-  border: 1px solid #F6BD60;
+  border: 1px solid #F9CD66;
 }
 
 label{
@@ -237,7 +237,7 @@ label{
 }
 
 .flip-card-back {
-  background-color: #2d4c82;
+  background-color: #F9CD66;
   color: white;
   transform: rotateY(180deg);
   padding: 50px;
@@ -272,7 +272,7 @@ label{
   height: 80px;
   width: 100%;
   display: flex;
-  background-color: #2d4c82;;
+  background-color: #9da0a5;
   color: white;
 }
 
