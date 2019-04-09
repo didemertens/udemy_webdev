@@ -1,0 +1,45 @@
+body{
+  background: #EDEDED;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+/*  color: orange;*/
+  color: #546E83;
+  text-align: center;
+}
+
+h3{
+  color: #2E76BF;
+}
+
+h4{
+  text-align: center;
+}
+
+p{
+  font-size: 14px;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+}
+
+.cards{
+  width: 300px;
+  background: white;
+  margin: 20px 5px;
+  padding: 15px;
+}
+
+hr{
+  border-top: 1px solid #d2d4d8;
+  margin: 10px -10px;
+}
+
+#hotels-graubunden{
+  font-size: 13px;
+  float: left;
+  color: #2E76BF;
+}
