@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from second_app import views
 from django.urls import path, include
+from django.conf import settings
 
 
 urlpatterns = [
@@ -24,3 +25,9 @@ urlpatterns = [
     path('help_me/',include('second_app.urls')),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+  import debug_toolbar
+  urlpatterns = [
+    path('__debug__/',include(debug_toolbar.urls))
+  ] + urlpatterns
